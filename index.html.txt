@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Load GSAP library -->
+    <script src="https://cdn.jsdelivr.net"></script>
+    <style>
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: #4285F4; /* Google Blue */
+            margin: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="box"></div>
+
+    <script>
+        // Simple GSAP animation
+        gsap.to(".box", {
+            duration: 2,
+            x: 200, // Move 200px to the right
+            rotation: 360, // Rotate 360 degrees
+            opacity: 0.5,
+            ease: "bounce"
+        });
+    </script>
+</body>
+</html>
